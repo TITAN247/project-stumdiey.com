@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="vycvhqyv.png">
+    <link rel="stylesheet" href="styles.css" />
+    <title>contact </title>
+    <style>@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+
+        :root {
+          --primary-color: #31b6bf;
+          --secondary-color: #e7e7f1;
+          --text-dark: #333333;
+          --text-light: #767268;
+          --extra-light: #f3f4f6;
+        }
+        
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: "Open Sans", sans-serif;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          padding-left: i;
+          justify-content:space-around;
+          background-color: var(--secondary-color);
+        }
+        
+        .profile__card {
+          position:relative;
+          max-width: 400px;
+          padding: 2rem;
+          text-align: center;
+          border-radius: 5px;
+          background-color: var(--extra-light);
+          box-shadow: 10px 10px 50px #9ca3af;
+          
+        }
+        
+      
+        
+        .profile__card img {
+          max-width: 100px;
+          border-radius: 100%;
+         padding-left: 1rem 0;
+          
+          
+         
+        }
+          
+        
+        .name {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: var(--text-dark);
+        }
+        
+        .designation {
+          font-size: 0.8rem;
+          color: var(--text-light);
+        }
+        
+        .profile__details {
+          padding: 2rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        
+        .profile__details p {
+          font-size: 0.8rem;
+          color: var(--text-light);
+          padding-left: 150px;
+        }
+        
+        .profile__details h4 {
+          font-size: 1rem;
+          font-weight: 500;
+          color: var(--text-dark);
+          padding-left: 150px;
+        }
+        
+        .about {
+          font-size: 0.8rem;
+          color: var(--text-light);
+        }
+        
+        .social__icons {
+          padding: 2rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+        }
+        
+        .icon {
+          height: 30px;
+          width: 30px;
+          text-decoration: none;
+          font-size: 1rem;
+          display: grid;
+          place-content: center;
+          color: var(--extra-light);
+          border-radius: 100%;
+          transition: 0.3s;
+          cursor: pointer;
+        }
+        
+        .ig {
+          background-color:rgb(234, 62, 62);
+        }
+        
+        .ig:hover {
+          box-shadow: 0px 2px 5px #40b1f7;
+        }
+        
+        .threads {
+          background-color:black;
+        }
+        
+        .threads:hover {
+          box-shadow: 0px 2px 5px #3c5a9b;
+        }
+        
+        .github{
+          background-color:black;
+        }
+        
+        .github:hover {
+          box-shadow: 0px 2px 5px #ff775d;
+        }
+        
+      
+        
+        .no {
+          text-decoration: none;
+          padding: 0.5rem 3rem;
+          font-size: 0.9rem;
+          color: var(--text-light);
+          border-radius: 8rem;
+          border: 1px solid var(--text-light);
+          font-weight: 500;
+          transition: 0.3s;
+        }
+        
+        .no:hover {
+          color: var(--extra-light);
+          background-color: var(--primary-color);
+          border-color: var(--primary-color);
+          box-shadow: 0px 2px 10px #9ca3af;
+        }
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282c34;
+    padding: 1rem;
+    color: white;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.brand-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #61dafb;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar-links li {
+    margin: 0 1rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #61dafb;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.navbar-links a:hover {
+    color: #61dafb;
+}
+
+.toggle-button {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-links.active ul {
+        display: flex;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}</style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-title">STUMDieY</div>
+      <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">☰</a>
+      <div class="navbar-links">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+       
+              <li><a href="pyq.html">PYQ</a></li>
+              <li><a href="notes.html">NOTES</a></li>
+             
+          </ul>
+      </div>
+  </nav>
+    <div class="profile__card">
+     
+      <img src="1.1.jpg"  alt="user" />
+      <h1 class="name">Shivansh Chuarasiya</h1>
+      <p class="designation">STUDENT</p>
+      <div class="profile__details">
+        <div class="col">
+          <p>Projects</p>
+          <h4>1</h4>
+        </div>
+        
+        
+      </div>
+      <div class="about">
+        I'm Shivansh, a web developer with a passion for creating beautiful and
+        user-friendly websites. I study in School of Management Sciences Varanasi .
+      </div>
+      <div class="social__icons">
+        <a href="https://www.instagram.com/shivanshx.e?igsh=d29yenloMXhqeWdh" class="icon ig"  target="_blank"><i class="ri-instagram-line"></i></a>
+        <a href="https://www.threads.net/@shivanshx.e" class="icon threads" target="_blank"><i class="ri-threads-line"></i></a>
+        <a href="https://github.com/TITAN247/TITAN247" class="icon github" target="_blank"><i class="ri-github-fill"></i></a>
+    
+      </div>
+      <h5 class="no"> +91 9621460091 </h5>
+    </div>
+    <div class="profile__card">
+     
+        <img src="sh1.png"  alt="user" />
+        <h1 class="name">-----------------------</h1>
+        <p class="designation">STUDENT</p>
+        <div class="profile__details">
+          <div class="col">
+            <p>Projects</p>
+            <h4>1</h4>
+          </div>
+          
+          
+        </div>
+        <div class="about">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sed rerum quas odio ad laborum vitae aut laudantium! Facilis, quos.
+        </div>
+        <div class="social__icons">
+          <a href="https://www.instagram.com/shivanshx.e?igsh=d29yenloMXhqeWdh" class="icon ig"  target="_blank"><i class="ri-instagram-line"></i></a>
+          <a href="https://www.threads.net/@shivanshx.e" class="icon threads" target="_blank"><i class="ri-threads-line"></i></a>
+          <a href="https://github.com/TITAN247/TITAN247" class="icon github" target="_blank"><i class="ri-github-fill"></i></a>
+      
+        </div>
+        <h5 class="no"> #############</h5>
+      </div>
+      <script>
+        function toggleMenu() {
+            const navbarLinks = document.querySelector('.navbar-links');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+  </body>
+</html>
