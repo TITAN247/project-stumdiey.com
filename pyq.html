@@ -69,44 +69,100 @@ body {
   background-color: #555;
   border-radius: 4px;
 }
+.price__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
 
-.card {
-  background-color: #fff;
+.price__card {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color-light);
+  border: 2px solid transparent;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  height: 800px;
-  width: 300px;
+  transition: 0.3s;
+}
+
+.price__card:hover {
+  background-color: var(--primary-color-extra-light);
+  border-color: var(--secondary-color);
+}
+
+.price__card__content {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.price__card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.price__card h3 {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+  border-bottom: 2px solid var(--white);
+}
+
+.price__card p {
+  margin-bottom: 0.75rem;
+  color: var(--white);
+}
+
+.price__card p i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.price__btn {
+  color: var(--secondary-color);
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+}
+
+.price__btn:hover {
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
+
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+:root {
+  --primary-color: #111317;
+  --primary-color-light: #1f2125;
+  --primary-color-extra-light: #35373b;
+  --secondary-color: #f9ac54;
+  --secondary-color-dark: #d79447;
+  --text-light: #d1d5db;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 600;
   text-align: center;
-  margin: 50px auto;
+  color: var(black);
 }
 
-.card h2 {
-  margin-top: 0;
-  font-size: 24px;
-}
-
-.card p {
-  font-size: 16px;
-  color: #666;
-  padding: 6px;
-}
-
-.download-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-}
-
-.download-btn:hover {
-  background-color: #0056b3;
-}
 </style>
 <body>
     <nav class="navbar">
@@ -117,22 +173,90 @@ body {
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <section class="section__container price__container">
+      <h2 class="section__header">Previous Year Questions</h2>
+  
+      <div class="price__grid">
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>FIRST SEM</h4>
+            <h3></h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              "Click the link below to download the previous year question paper "
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              
+            </p>
+          </div>
+      <a href="EIT.pdf"  download="unit" class="btn price__btn" style="text-align: center;">download</a>
+        </div>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Second Sem</h4>
+            <h3></h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              "Click the link below to download the previous year question paper "
+            </p>
+            
+          </div>
+          <a href="EIT.pdf"  download="unit" class="btn price__btn" style="text-align: center;">download</a>
+        </div>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Third Sem</h4>
+            <h3></h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              "Click the link below to download the previous year question paper "
+            </p>
+            
+          </div>
+          <a href="EIT.pdf"  download="unit" class="btn price__btn" style="text-align: center;">download</a>
+        </div>
+      </div>
+      <div class="price__grid">
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>FourthSem</h4>
+            <h3></h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              "Click the link below to download the previous year question paper "
+            </p>
+            
+          </div>
+          <a href="EIT.pdf"  download="unit" class="btn price__btn" style="text-align: center;">download</a>
+        </div>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Fifth Sem</h4>
+            <h3></h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              "Click the link below to download the previous year question paper "
+            </p>
+            
+          </div>
+          <a href="EIT.pdf"  download="unit" class="btn price__btn" style="text-align: center;">download</a>
+        </div>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Sixth Sem</h4>
+            <h3></h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              "Click the link below to download the previous year question paper "
+            </p>
+            
+          </div>
+          <a href="EIT.pdf"  download="unit" class="btn price__btn" style="text-align: center;">download</a>
+        </div>
+      </div>
+    </section>
+    </body>
+    </html>
 
-    <div class="card">
-        <h2>PYQs</h2>
-        <p>BCA-I</p>
-        <a href="your-file.txt" download="your-file.txt" class="download-btn">Download</a>
-        <p>BCA-II</p>
-        <a href="your-file.txt" download="your-file.txt" class="download-btn">Download</a>
-        <p>BCA-III</p>
-        <a href="your-file.txt" download="your-file.txt" class="download-btn">Download</a>
-        <p>BCA-IV</p>
-        <a href="your-file.txt" download="your-file.txt" class="download-btn">Download</a>
-        <p>BCA-V</p>
-        <a href="your-file.txt" download="your-file.txt" class="download-btn">Download</a>
-        <p>BCA-VI</p>
-        <a href="your-file.txt" download="your-file.txt" class="download-btn">Download</a>
-
-    </div>
-</body>
-</html>
+  
